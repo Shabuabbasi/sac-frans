@@ -4,9 +4,9 @@
 
 :root {
     --brand-black: #000000;
-    --brand-burgundy: #722F37;
-    --brand-burgundy-dark: #5a252c;
-    --brand-burgundy-light: #8f3a45;
+    --brand-gold: #c9a227;
+    --brand-gold-dark: #a8851c;
+    --brand-gold-light: #e2c050;
     --accent-red: #b91c1c;
     --accent-green: #15803d;
     --accent-green-soft: #dcfce7;
@@ -17,7 +17,7 @@
     --color-border: #e4e4e7;
     --gold: #c9a227;
     --shadow-lg: 0 10px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.08);
-    --shadow-premium: 0 20px 40px -12px rgb(114 47 55 / 0.15);
+    --shadow-premium: 0 20px 40px -12px rgb(201 162 39 / 0.15);
     --transition-fast: 0.15s ease;
     --transition-base: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -69,18 +69,18 @@ body {
 
 .skip-link:focus {
     top: 1rem;
-    outline: 2px solid var(--brand-burgundy);
+    outline: 2px solid var(--brand-gold);
     outline-offset: 2px;
 }
 
 .site-nav { backdrop-filter: blur(12px); background: rgb(255 255 255 / 0.92); }
 
 .nav-link { transition: color var(--transition-fast); }
-.nav-link:hover, .nav-link:focus-visible { color: var(--brand-burgundy); }
-.nav-link-active { color: var(--brand-burgundy); font-weight: 600; }
+.nav-link:hover, .nav-link:focus-visible { color: var(--brand-gold); }
+.nav-link-active { color: var(--brand-gold); font-weight: 600; }
 
 .gold-btn, .btn-primary {
-    background: linear-gradient(135deg, var(--brand-burgundy), var(--brand-burgundy-light));
+    background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-light));
     transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .gold-gradient {
-    background: linear-gradient(135deg, var(--brand-burgundy), var(--brand-burgundy-light), #a84854);
+    background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-light), #b8951e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -154,13 +154,13 @@ body {
 .finance-input { transition: border-color var(--transition-fast), box-shadow var(--transition-fast); }
 
 .finance-input:focus {
-    border-color: var(--brand-burgundy);
-    box-shadow: 0 0 0 3px rgb(114 47 55 / 0.12);
+    border-color: var(--brand-gold);
+    box-shadow: 0 0 0 3px rgb(201 162 39 / 0.12);
     outline: none;
 }
 
 .step-number {
-    background: linear-gradient(135deg, var(--brand-burgundy), var(--brand-burgundy-light));
+    background: linear-gradient(135deg, var(--brand-gold), var(--brand-gold-light));
     color: white;
     width: 42px;
     height: 42px;
@@ -183,11 +183,11 @@ body {
 
 .page-prose { font-size: 1.125rem; line-height: 1.75; color: var(--color-text-muted); }
 .page-prose h2 { font-size: 1.75rem; font-weight: 700; color: var(--color-text); margin-top: 3rem; margin-bottom: 1.5rem; }
-.page-prose a { color: var(--brand-burgundy); font-weight: 600; }
+.page-prose a { color: var(--brand-gold); font-weight: 600; }
 
 .site-footer { background: #09090b; color: #a1a1aa; font-size: 0.875rem; padding: 3rem clamp(1rem, 4vw, 2rem); }
 .site-footer a { color: #d4d4d8; }
 .site-footer a:hover { color: #fff; }
 
-:focus-visible { outline: 2px solid var(--brand-burgundy); outline-offset: 2px; }
-::selection { background: rgb(114 47 55 / 0.2); }
+:focus-visible { outline: 2px solid var(--brand-gold); outline-offset: 2px; }
+::selection { background: rgb(201 162 39 / 0.2); }
