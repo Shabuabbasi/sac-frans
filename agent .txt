@@ -1,0 +1,229 @@
+You are a senior Full Stack Developer responsible for implementing all requested customizations for an existing SCAC Finance website.
+
+Your task is to analyze the entire codebase, identify all affected files, make the required changes, and ensure everything works correctly.
+
+## Project Requirements
+
+### 1. Branding Changes
+
+Update all occurrences of:
+
+**Second Chance Adjustment Capital**
+
+Apply styling:
+
+* "Second Chance" = Gold
+* "Adjustment Capital" = Red
+
+Update all occurrences of:
+
+**SCAC**
+
+Apply styling:
+
+* "SC" = Gold
+* "AC" = Red
+
+Ensure this styling is applied consistently across:
+
+* Header
+* Footer
+* Navigation
+* Application forms
+* Service cards
+* Any other location where SCAC appears
+
+### 2. Logo
+
+* Upload and integrate the provided logo.
+* Make the logo visually prominent.
+* Logo height should approximately match the bank name text beside it.
+* Ensure responsiveness on desktop and mobile.
+
+### 3. Favicon
+
+Add the provided favicon to the website.
+
+### 4. Phone Number Replacement
+
+Search the entire codebase and replace every occurrence of:
+
+561-552-7728
+
+with:
+
+855-888-6423
+
+### 5. Email Replacement
+
+Search the entire codebase and replace all application/contact email destinations with:
+
+[info@scac.finance](mailto:info@scac.finance)
+
+Ensure:
+
+* Contact forms send to this address.
+* Application forms send to this address.
+* Footer email displays this address.
+* Any mailto links use this address.
+
+### 6. Green Accent Color
+
+Use green as the dominant accent color for notices and highlighted messages.
+
+Ensure the phrase:
+
+"Simple. Transparent. Fast."
+
+is displayed using the designated green accent color.
+
+### 7. Footer Branding
+
+At the bottom of all application-related pages:
+
+SC = Gold
+AC = Red
+
+### 8. Create Missing Pages
+
+Create and integrate the following pages using the content supplied by the client:
+
+* About Us
+* Underwriting
+* Free Credit Repair
+* Legal
+* Privacy Policy
+* Terms of Service
+
+Requirements:
+
+* Professional layout
+* Responsive design
+* Consistent styling
+* SEO-friendly headings
+
+### 9. Navigation Menu
+
+Add relevant legal/policy pages to navigation.
+
+Include:
+
+* About Us
+* Privacy Policy
+* Terms of Service
+
+Ensure navigation works correctly on desktop and mobile.
+
+### 10. Statistics Section
+
+Locate the existing statistics/counter section and replace the current text with:
+
+"Over 12,400 approvals are projected for the first year."
+
+### 11. Services Menu Branding
+
+Under Services:
+
+SCAC VISA
+SCAC MASTERCARD
+
+must use branding colors:
+
+SC = Gold
+AC = Red
+
+### 12. Fix Broken File Upload
+
+Client reported a broken file upload area on the homepage.
+
+Tasks:
+
+* Locate the upload component.
+* Repair all broken functionality.
+* Ensure users can upload documents.
+* Validate accepted file types.
+* Show upload success/error messages.
+* Test functionality thoroughly.
+
+### 13. Application Workflow Testing
+
+Review the entire application submission process.
+
+Verify:
+
+* Form validation works.
+* Form submits correctly.
+* Attachments upload successfully.
+* Emails are sent to [info@scac.finance](mailto:info@scac.finance).
+* Error handling exists.
+* Success confirmations are displayed.
+
+### 14. Document Upload Support
+
+Ensure applicants can upload:
+
+* Proof of income
+* W-2 documents
+* Self-employment documents
+* Business documents
+* PDF bank statements
+
+Verify upload limits and accepted file types.
+
+### 15. Social Media Icons
+
+Update footer social media icons:
+
+* Style them in gold.
+* Maintain hover effects.
+* Ensure visibility on all screen sizes.
+
+### 16. Mobile Responsiveness Audit
+
+Perform a full responsive review.
+
+Check:
+
+* Header
+* Navigation
+* Hero section
+* Forms
+* Services
+* Footer
+* Legal pages
+* Upload components
+
+Fix:
+
+* Overflow issues
+* Alignment issues
+* Spacing issues
+* Text wrapping issues
+* Broken layouts
+
+### 17. Code Quality Requirements
+
+* Maintain existing project structure.
+* Do not break existing functionality.
+* Remove dead code if discovered.
+* Follow best practices.
+* Use reusable components where possible.
+* Ensure clean, maintainable code.
+
+### 18. Final Deliverables
+
+Provide:
+
+1. List of files modified.
+2. Summary of each change.
+3. Any issues discovered.
+4. Any recommendations.
+5. Confirmation that:
+
+   * Forms work.
+   * Uploads work.
+   * Mobile responsiveness verified.
+   * Branding updated.
+   * Navigation updated.
+
+Start by analyzing the codebase and creating a step-by-step implementation plan before making changes.
