@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A clear look at the SCAC underwriting approach including income verification, documentation, and decision timelines.">
-    <title>Underwriting - SCAC</title>
+    <meta name="description" content="Contact SCAC for a message-based callback instead of calling right away.">
+    <title>Contact Us - SCAC</title>
     <link rel="icon" type="image/png" href="favicon/favicon.png">
     <link rel="apple-touch-icon" href="favicon/favicon.png">
     <link rel="stylesheet" href="assets/icons/fontawesome/css/all.min.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="css/responsive.css?v=20260707">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-zinc-50 text-zinc-800">
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
@@ -47,33 +49,77 @@
             </div>
         </nav>
     </header>
+
     <main id="main-content" class="page-main">
         <div class="max-w-4xl mx-auto">
-            <p class="text-sm font-semibold uppercase tracking-[3px] accent-green">Underwriting</p>
-            <h1 class="text-4xl md:text-5xl font-bold heading-font mt-3">A practical underwriting path based on income and repayment ability.</h1>
-            <p class="page-prose mt-6">We review each request with care, focusing on current financial strength and the ability to repay. Our model is built to offer a second chance without sacrificing accountability or transparency.</p>
-            <div class="grid md:grid-cols-3 gap-6 mt-10">
-                <div class="rounded-3xl border border-zinc-200 bg-white p-7">
-                    <h2 class="text-xl font-semibold">1. Verify income</h2>
-                    <p class="mt-3 text-zinc-600">Applicants provide recent paystubs, business records, or bank statements that reflect real earning power.</p>
+            <div class="text-center mb-12">
+                <p class="text-sm font-semibold uppercase tracking-[3px] accent-green">Contact SCAC</p>
+                <h1 class="text-4xl md:text-5xl font-bold heading-font mt-4">Send a message and we’ll call you back.</h1>
+                <p class="mt-4 max-w-3xl mx-auto text-xl text-zinc-600">If you're hesitant to call right now, use the form below and our banking team will return your call as soon as possible.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="rounded-3xl border border-zinc-200 bg-white p-10 shadow-sm">
+                    <h2 class="text-2xl font-semibold mb-4">Message-based callback</h2>
+                    <p class="text-zinc-600 mb-6">Complete the quick message form and tell us the best time to reach you. We’ll review your request and follow up by phone.</p>
+                    <form id="contactForm" name="scac-contact" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field" class="space-y-5" onsubmit="showContactSuccessMessage()">
+                        <input type="hidden" name="form-name" value="scac-contact">
+                        <p class="hidden" style="display:none">
+                            <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+                        </p>
+                        <div>
+                            <label for="name" class="text-sm font-semibold">Full Name *</label>
+                            <input type="text" id="name" name="Name" required class="mt-2 block w-full rounded-3xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-800 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="email" class="text-sm font-semibold">Email Address *</label>
+                            <input type="email" id="email" name="Email" required class="mt-2 block w-full rounded-3xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-800 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100" placeholder="you@example.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="text-sm font-semibold">Phone Number *</label>
+                            <input type="tel" id="phone" name="Phone" required class="mt-2 block w-full rounded-3xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-800 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100" placeholder="(555) 123-4567">
+                        </div>
+                        <div>
+                            <label for="message" class="text-sm font-semibold">Message</label>
+                            <textarea id="message" name="Message" rows="5" class="mt-2 block w-full rounded-3xl border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-800 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100" placeholder="Tell us how we can help and the best time to reach you."></textarea>
+                        </div>
+                        <button type="submit" class="gold-btn w-full py-4 rounded-3xl text-white font-bold text-base">Send Message</button>
+                        <div id="contactSuccessMessage" class="hidden rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
+                            Thanks! Your message has been sent. You’ll be redirected shortly.
+                        </div>
+                    </form>
+                    <p class="text-xs text-zinc-500 mt-4">If your browser doesn’t support the form submission flow, please send your details to <a href="mailto:info@scac.finance" class="text-emerald-500 hover:text-emerald-400">info@scac.finance</a>.</p>
                 </div>
-                <div class="rounded-3xl border border-zinc-200 bg-white p-7">
-                    <h2 class="text-xl font-semibold">2. Review stability</h2>
-                    <p class="mt-3 text-zinc-600">We evaluate employment history, recent deposits, and consistency to understand the borrower’s current position.</p>
-                </div>
-                <div class="rounded-3xl border border-zinc-200 bg-white p-7">
-                    <h2 class="text-xl font-semibold">3. Make a decision</h2>
-                    <p class="mt-3 text-zinc-600">Once the documents are reviewed, we communicate next steps clearly and promptly so applicants understand the outcome.</p>
+
+                <div class="rounded-3xl border border-zinc-200 bg-white p-10 shadow-sm">
+                    <h2 class="text-2xl font-semibold mb-4">Need a faster answer?</h2>
+                    <div class="space-y-5 text-zinc-600">
+                        <div>
+                            <p class="font-semibold text-zinc-900">Phone</p>
+                            <p><a href="tel:8558886423" class="text-emerald-500 hover:text-emerald-400">855-888-6423</a></p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-zinc-900">Email</p>
+                            <p><a href="mailto:info@scac.finance" class="text-emerald-500 hover:text-emerald-400">info@scac.finance</a></p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-zinc-900">What to expect</p>
+                            <ul class="list-disc list-inside space-y-2 text-sm">
+                                <li>One of our banking specialists will review your request.</li>
+                                <li>We’ll call you back using the phone number you provide.</li>
+                                <li>If we need documents, we’ll send a secure upload link by email.</li>
+                            </ul>
+                        </div>
+                        <div class="rounded-3xl bg-emerald-50 border border-emerald-200 p-5 text-sm">
+                            <strong>Note:</strong> This page is designed for those who want a message-based callback instead of calling immediately.
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="notice-card rounded-3xl p-8 mt-8">
-                <h2 class="text-2xl font-semibold">What to prepare</h2>
-                <p class="mt-3 text-sm">Proof of income, W-2 or 1099 documents, business records, and recent bank statements may be requested depending on your loan type and application profile.</p>
-            </div>
-            <p class="mt-8 text-zinc-600">Questions? Call <a href="tel:8558886423" class="font-semibold text-emerald-700">855-888-6423</a> or email <a href="mailto:info@scac.finance" class="font-semibold text-emerald-700">info@scac.finance</a>.</p>
         </div>
     </main>
-    <footer class="bg-zinc-950 text-zinc-400 text-sm py-12 mt-16">
+
+    <footer class="bg-zinc-950 text-zinc-400 text-sm py-12">
         <div class="max-w-screen-2xl mx-auto px-8">
             <div class="flex flex-col md:flex-row justify-between gap-y-8">
                 <div>
@@ -81,11 +127,9 @@
                         <div class="w-8 h-8 bg-amber-600 rounded-2xl flex items-center justify-center">
                             <i class="fas fa-handshake text-white"></i>
                         </div>
-                          <span class="font-bold uppercase whitespace-nowrap text-xs"><span class="brand-sc-on-dark">SECOND CHANCE</span> <span class="brand-ac-on-dark">ADJUSTMENT CAPITAL</span></span>
+  <span class="font-bold uppercase whitespace-nowrap text-xs"><span class="brand-sc-on-dark">SECOND CHANCE</span> <span class="brand-ac-on-dark">ADJUSTMENT CAPITAL</span></span>
                     </div>
-                    <div class="max-w-xs text-xs">A financial services platform focused on income-based lending. Not an
-                        FDIC-insured depository institution. Operates nationwide under a private bank charter registered
-                        in Florida.</div>
+                    <div class="max-w-xs text-xs">A financial services platform focused on income-based lending. Not an FDIC-insured depository institution. Operates nationwide under a private bank charter registered in Florida.</div>
                 </div>
 
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-8 text-xs">
@@ -129,6 +173,17 @@
             </div>
         </div>
     </footer>
+
     <script src="js/main.js"></script>
+    <script>
+        function showContactSuccessMessage() {
+            const message = document.getElementById('contactSuccessMessage');
+            const form = document.getElementById('contactForm');
+            if (message && form) {
+                message.classList.remove('hidden');
+                message.classList.add('block');
+            }
+        }
+    </script>
 </body>
 </html>

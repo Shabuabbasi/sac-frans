@@ -48,10 +48,12 @@ body {
     font-weight: 700;
 }
 
-.brand-name { display: inline; }
+.brand-name { display: inline; font-weight: 700; }
 .brand-sc { color: var(--gold); }
-.brand-ac { color: var(--accent-red); }
+/* .brand-ac { color: var(--accent-red); } */
+.brand-ac { color: #FF0000 !important; }
 .brand-sc-on-dark { color: var(--gold); }
+/* .brand-sc-on-dark { color: #FF0000 !important;; } */
 .brand-ac-on-dark { color: var(--accent-red); }
 
 .skip-link {
@@ -98,6 +100,11 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.hero-red {
+    color: #FF0000 !important;
+    -webkit-text-fill-color: #FF0000 !important;
 }
 
 .trust-bar { background: linear-gradient(to right, #f8fafc, #f5eef0); }
