@@ -71,6 +71,7 @@ function toggleMobileMenu() {
             <a href="free-credit-repair.html" class="hover:text-amber-400">Free Credit Repair</a>
             <a href="privacy-policy.html" class="hover:text-amber-400">Privacy Policy</a>
             <a href="terms-of-service.html" class="hover:text-amber-400">Terms of Service</a>
+            <a href="contact.html" class="hover:text-amber-400" onclick="toggleMobileMenu()">Contact</a>
             <a href="index.html#apply" class="hover:text-amber-400" onclick="toggleMobileMenu()">Apply Now</a>
             <div class="pt-6 border-t border-white/20">
                 <a href="tel:8558886423" class="flex items-center gap-3 text-emerald-400">
