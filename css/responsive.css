@@ -63,10 +63,6 @@
     .site-nav .apply-link {
         display: none;
     }
-
-    .site-nav .brand-tagline {
-        display: none;
-    }
 }
 
 body { overflow-x: hidden; }
